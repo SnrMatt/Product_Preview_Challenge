@@ -1,0 +1,128 @@
+.main_background {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile_product_card {
+  position: relative;
+  height: 600px;
+  width: 345.25px;
+  background-color: var(--neutralWhite);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mobile_product_info {
+  padding-left: 20px;
+  max-width: 90%;
+}
+.mobile_product_info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: gray;
+}
+.mobile_product_info h1 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+}
+.mobile_product_price {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.mobile_product_price h1 {
+  font-family: "Fraunces", serif;
+  color: var(--darkCyan);
+}
+.mobile_product_price span {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  color: gray;
+}
+.mobile_cart_button {
+  width: 85%;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--darkCyan);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 1rem;
+}
+.product_card {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .mobile_product_card {
+    display: none;
+  }
+  .product_card {
+    height: 450px;
+    width: 700px;
+    border-radius: 20px;
+    background-color: var(--neutralWhite);
+    display: flex;
+    overflow: hidden;
+  }
+  .product_card img {
+    width: 50%;
+    height: 100%;
+  }
+  .product_info_wrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+  .product_info {
+    padding-left: 20px;
+    max-width: 75%;
+  }
+  .product_info p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+  }
+  .product_info h1 {
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-size: 36px;
+  }
+  .cart_button {
+    width: 75%;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--darkCyan);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+  }
+  .cart_button:hover {
+    background-color: var(--neutralDarkBlue);
+    cursor: pointer;
+  }
+  .product_info img {
+    width: auto;
+  }
+}

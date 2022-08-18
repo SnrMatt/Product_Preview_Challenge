@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="main_background">
       <div className="mobile_product_card">
-        <img src="/images/image-product-mobile.jpg" />
+        <img alt="" src="/images/image-product-mobile.jpg" />
         <div className="mobile_product_info">
           <p style={{ fontSize: "13px" }}>P E R F U M E</p>
           <h1>Gabrielle Essence Eau De Parfum</h1>
@@ -18,11 +18,11 @@ function App() {
           </div>
         </div>
         <button className="mobile_cart_button">
-          <img src="/images/icon-cart.svg" /> Add to Cart
+          <img alt="" src="/images/icon-cart.svg" /> Add to Cart
         </button>
       </div>
       <div className="product_card">
-        <img src="/images/image-product-desktop.jpg" />
+        <img alt="" src="/images/image-product-desktop.jpg" />
         <div className="product_info_wrapper">
           <div className="product_info">
             <p style={{ fontSize: "13px", paddingTop: "20px" }}>
@@ -38,7 +38,7 @@ function App() {
               <span>$169.99</span>
             </div>
             <button className="cart_button">
-              <img src="/images/icon-cart.svg" /> Add to Cart
+              <img alt="" src="/images/icon-cart.svg" /> Add to Cart
             </button>
           </div>
         </div>
